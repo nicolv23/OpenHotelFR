@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>OpenHotelFR</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #4a90e2, #50bfa0);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            margin-top: 60px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: white;
+            color: #4a90e2;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e6e6e6;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World — OpenHotelFR</h1>
-    <p>Bienvenue sur votre application Flask.</p>
+
+    <header>
+        <h1>OpenHotelFR</h1>
+        <p>Bienvenue sur votre application de gestion hôtelière.</p>
+    </header>
+
+    <div class="container">
+        <a href="#" class="btn">Découvrir les fonctionnalités</a>
+    </div>
+
 </body>
 </html>
