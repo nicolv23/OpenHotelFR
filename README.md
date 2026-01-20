@@ -27,23 +27,36 @@ OpenHotelFR est une application web développée en Python avec le framework Fla
 
 OpenHotelFR/
 │
-├── app/                     # Code principal de l'application Flask
-│   ├── __init__.py          # Fonction create_app() et configuration de l'app
-│   ├── bd.py                # (À venir) Initialisation de la base de données
+├── app/                    
+# Code principal de l'application Flask
+│   ├── __init__.py          
+# Fonction create_app() et configuration de l'app
+│   ├── bd.py                
+# (À venir) Initialisation de la base de données
 │   │
-│   ├── routes/              # Dossiers contenant les Blueprints (routes)
-│   │   └── main.py          # Routes principales (page d'accueil)
+│   ├── routes/              
+# Dossiers contenant les Blueprints (routes)
+│   │   └── main.py          
+# Routes principales (page d'accueil)
 │   │
-│   ├── templates/           # Templates HTML (Jinja2)
-│   │   ├── layout.html      # Template de base (héritage)
-│   │   └── index.html       # Page d'accueil
+│   ├── templates/           
+# Templates HTML (Jinja2)
+│   │   ├── layout.html      
+# Template de base (héritage)
+│   │   └── index.html       
+# Page d'accueil
 │   │
-│   └── static/              # Fichiers statiques (CSS, JS, images)
+│   └── static/             
+# Fichiers statiques (CSS, JS, images)
 │
-├── config.py                # Configuration globale de l'application
-├── run.py                   # Point d'entrée pour lancer Flask
-├── requirements.txt         # Dépendances Python
-└── README.md                # Documentation du projet
+├── config.py                
+# Configuration globale de l'application
+├── run.py                   
+# Point d'entrée pour lancer Flask
+├── requirements.txt         
+# Dépendances Python
+└── README.md                
+# Documentation du projet
 
 
 ## Description des éléments du projet 
