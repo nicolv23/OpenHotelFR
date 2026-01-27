@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hôtel – OpenHotelFR</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(6px);
+            position: sticky;
+            top: 0;
+        }
+
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            opacity: 0.7;
+        }
+
+        /* BANNER */
+        .banner {
+            width: 100%;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        /* CONTENT */
+        .content {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(6px);
+        }
+
+        .room-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .room-card h3 {
+            margin: 0;
+            font-size: 1.4rem;
+        }
+
+        .room-card p {
+            margin: 8px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: white;
+            color: #1e3c72;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e6e6e6;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 60px;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.25);
+            text-align: center;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">OpenHotelFR</div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="recherche.html">Hôtels</a></li>
+            <li><a href="#">Réservations</a></li>
+            <li><a href="#">Mon Compte</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="banner">
+        Photo de l'hôtel
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- DESCRIPTION -->
+        <div class="section">
+            <h2>Hôtel du Centre</h2>
+            <p>
+                Situé au cœur de la ville, l’Hôtel du Centre offre un confort moderne, un accès rapide aux commerces,
+                et un service haut de gamme. Idéal pour les séjours professionnels comme pour les vacances.
+            </p>
+            <p>⭐ 4.5 — À partir de $89/nuit</p>
+        </div>
+
+        <!-- EQUIPEMENTS -->
+        <div class="section">
+            <h2>Équipements</h2>
+            <p>• Wi-Fi gratuit</p>
+            <p>• Piscine intérieure</p>
+            <p>• Salle de sport</p>
+            <p>• Restaurant & bar</p>
+            <p>• Parking privé</p>
+        </div>
+
+        <!-- ROOMS -->
+        <div class="section">
+            <h2>Types de chambres</h2>
+
+            <div class="room-card">
+                <h3>Chambre Standard</h3>
+                <p>Lit double, salle de bain privée, TV, Wi-Fi.</p>
+                <p><strong>$89/nuit</strong></p>
+                <a href="#" class="btn">Réserver</a>
+            </div>
+
+            <div class="room-card">
+                <h3>Chambre Deluxe</h3>
+                <p>Lit queen-size, vue panoramique, minibar, salle de bain premium.</p>
+                <p><strong>$129/nuit</strong></p>
+                <a href="#" class="btn">Réserver</a>
+            </div>
+
+            <div class="room-card">
+                <h3>Suite Prestige</h3>
+                <p>Salon privé, lit king-size, jacuzzi, service VIP.</p>
+                <p><strong>$199/nuit</strong></p>
+                <a href="#" class="btn">Réserver</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 OpenHotelFR — Plateforme de réservation hôtelière. Tous droits réservés.
+    </footer>
+
+</body>
+</html>
