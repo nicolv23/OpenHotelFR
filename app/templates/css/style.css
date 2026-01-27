@@ -1,0 +1,231 @@
+/* ================================
+   VARIABLES GLOBALES (NOUVELLES COULEURS PREMIUM)
+================================ */
+
+:root {
+    --color-bg1: #0f172a;      /* Bleu nuit */
+    --color-bg2: #1e3a8a;      /* Bleu royal */
+    --color-accent: #6366f1;   /* Indigo moderne */
+    --color-accent2: #06b6d4;  /* Turquoise premium */
+    --color-white: #ffffff;
+    --color-light: rgba(255, 255, 255, 0.12);
+    --color-light-strong: rgba(255, 255, 255, 0.22);
+    --color-text: #ffffff;
+
+    --radius: 14px;
+    --transition: 0.3s ease;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* ================================
+   RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, var(--color-bg1), var(--color-bg2));
+    color: var(--color-text);
+    min-height: 100vh;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 45px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: var(--color-accent2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+nav ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--color-accent2);
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+
+header {
+    text-align: center;
+    padding: 110px 20px 70px;
+}
+
+header h1 {
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+    text-shadow: var(--shadow);
+    color: var(--color-accent2);
+}
+
+header p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+/* ================================
+   BOXES (recherche, sections, etc.)
+================================ */
+
+.box,
+.section,
+.reservation-box {
+    background: var(--color-light);
+    padding: 35px;
+    margin: 45px auto;
+    width: 85%;
+    max-width: 900px;
+    border-radius: var(--radius);
+    backdrop-filter: blur(14px);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* TITRES DE SECTIONS */
+.box h2,
+.section h2,
+.reservation-box h2 {
+    font-size: 2.1rem;
+    margin-bottom: 18px;
+    color: var(--color-accent2);
+}
+
+/* ================================
+   FORMULAIRES
+================================ */
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 14px 0;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    background: rgba(255,255,255,0.2);
+    color: var(--color-white);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+/* ================================
+   BOUTONS
+================================ */
+
+.btn {
+    display: inline-block;
+    padding: 15px 32px;
+    background: var(--color-accent2);
+    color: var(--color-white);
+    font-weight: bold;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: var(--transition);
+    margin-top: 12px;
+    box-shadow: var(--shadow);
+}
+
+.btn:hover {
+    background: var(--color-accent);
+}
+
+/* ================================
+   CARTES D'HÔTELS
+================================ */
+
+.hotel-card {
+    background: var(--color-light);
+    padding: 28px;
+    border-radius: var(--radius);
+    backdrop-filter: blur(14px);
+    margin-bottom: 28px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.hotel-image {
+    width: 160px;
+    height: 120px;
+    background: var(--color-light-strong);
+    border-radius: var(--radius);
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    margin-top: 90px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.08);
+    text-align: center;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+    nav ul {
+        gap: 18px;
+    }
+
+    header h1 {
+        font-size: 2.6rem;
+    }
+
+    .hotel-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hotel-image {
+        width: 100%;
+        height: 200px;
+    }
+}
